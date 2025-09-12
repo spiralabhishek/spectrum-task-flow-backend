@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+ <ItemGroup>
+    <!-- Core Hot Chocolate package, includes Subscriptions and the built-in UI -->
+    <PackageReference Include="HotChocolate.AspNetCore" Version="13.9.0" />
+    
+    <!-- Integration with Entity Framework for UseDbContext, Filtering, Sorting -->
+    <PackageReference Include="HotChocolate.Data.EntityFramework" Version="13.9.0" />
+
+    <!-- Entity Framework Core tools -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+
+    <!-- In-Memory Database for EF Core -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.InMemory" Version="8.0.4" />
+  </ItemGroup>
+
+</Project>
